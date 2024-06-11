@@ -1,0 +1,20 @@
+[project]
+dynamic = ["dependencies"]
+name = "UQtools"
+version = "0.0.1"
+description = 'Methods for evaluating uncertainty quantification metrics'
+readme = "README.md"
+license = { file = "LICENSE" }
+
+[project.urls]
+repository = "https://github.com/jensengroup/UQ_validation_methods"
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ['UQtools']
